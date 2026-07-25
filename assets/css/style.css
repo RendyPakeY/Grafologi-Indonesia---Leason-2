@@ -12,16 +12,14 @@
     --clr-sub-purple: #A62B90;
     --clr-body-text: #4F4655;
     --clr-text-light: #706677;
-    
+
     /* Gradients */
     --grad-cta: linear-gradient(90deg, #FFB800 0%, #FF0066 100%);
     --grad-profile: linear-gradient(135deg, #FF2E93 0%, #FF0066 100%);
-    --grad-bg-overlay: linear-gradient(
-        135deg,
-        rgba(244, 238, 246, 0.90) 0%,
-        rgba(235, 224, 239, 0.86) 45%,
-        rgba(222, 206, 230, 0.82) 100%
-    );
+    --grad-bg-overlay: linear-gradient(135deg,
+            rgba(244, 238, 246, 0.90) 0%,
+            rgba(235, 224, 239, 0.86) 45%,
+            rgba(222, 206, 230, 0.82) 100%);
 
     /* Glassmorphic Tokens */
     --glass-nav-bg: rgba(255, 255, 255, 0.55);
@@ -32,7 +30,7 @@
 
     /* Typography */
     --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    
+
     /* Layout */
     --max-width: 1280px;
     --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,7 +38,9 @@
 }
 
 /* 2. Reset & Global Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -147,8 +147,8 @@ button {
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: var(--glass-border);
-    border-radius: 40px;
-    padding: 10px 28px;
+    border-radius: 10px;
+    padding: 15px 28px;
     box-shadow: 0 8px 32px rgba(45, 15, 60, 0.05);
 }
 
@@ -189,7 +189,7 @@ button {
 .profile-btn {
     width: 48px;
     height: 48px;
-    border-radius: 16px;
+    border-radius: 12px;
     background: var(--grad-profile);
     color: #FFFFFF;
     font-size: 1.25rem;
@@ -333,6 +333,7 @@ button {
         opacity: 0;
         transform: translateY(8px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -625,7 +626,7 @@ button {
     .hero-title {
         font-size: 2.8rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.4rem;
     }
